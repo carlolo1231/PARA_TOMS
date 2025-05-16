@@ -116,7 +116,7 @@ public class AdminDashboard extends javax.swing.JFrame {
 
         Transaction1.setBackground(new java.awt.Color(255, 255, 255));
         Transaction1.setFont(new java.awt.Font("Cambria Math", 1, 14)); // NOI18N
-        Transaction1.setText("Supplies");
+        Transaction1.setText("Transactions");
         Transaction1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Transaction1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -194,7 +194,9 @@ public class AdminDashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_RequestedSuppliesActionPerformed
 
     private void Transaction1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Transaction1ActionPerformed
-        // TODO add your handling code here:
+       Transactions tt = new Transactions();
+       tt.setVisible(true);
+       this.dispose();
     }//GEN-LAST:event_Transaction1ActionPerformed
 
     /**
