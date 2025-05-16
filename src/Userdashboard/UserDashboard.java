@@ -29,9 +29,7 @@ public class UserDashboard extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        acc = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         lg = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
@@ -40,118 +38,119 @@ public class UserDashboard extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         ya = new javax.swing.JLabel();
         ya1 = new javax.swing.JLabel();
-        ya2 = new javax.swing.JLabel();
         ya3 = new javax.swing.JLabel();
+        ya2 = new javax.swing.JLabel();
+        acc = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setBackground(new java.awt.Color(0, 102, 102));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel3.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Cambria Math", 0, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, 59));
 
-        acc.setBackground(new java.awt.Color(255, 255, 255));
-        acc.setFont(new java.awt.Font("Cambria Math", 0, 18)); // NOI18N
-        acc.setForeground(new java.awt.Color(255, 255, 255));
-        acc.setText("Account");
-        acc.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, null, new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0)));
-        acc.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                accMouseClicked(evt);
-            }
-        });
-        jPanel3.add(acc, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 30, 100, 40));
-
-        jLabel12.setFont(new java.awt.Font("Cambria Math", 0, 24)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Georgia", 1, 36)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText(" User Dashboard");
-        jLabel12.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, null, new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0)));
-        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 180, 40));
+        jLabel12.setText("DASHBOARD");
+        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 290, 40));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1080, 100));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 130));
 
-        jButton3.setText("Log In");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 760, 80, 30));
-
-        jPanel2.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel2.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.setForeground(new java.awt.Color(51, 51, 51));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lg.setFont(new java.awt.Font("Cambria Math", 0, 18)); // NOI18N
+        lg.setBackground(new java.awt.Color(255, 255, 255));
+        lg.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
         lg.setForeground(new java.awt.Color(255, 255, 255));
-        lg.setText("Logout");
+        lg.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lg.setText("LOGOUT");
         lg.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, null, new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0)));
         lg.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lgMouseClicked(evt);
             }
         });
-        jPanel2.add(lg, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 510, 120, 40));
+        jPanel2.add(lg, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 500, 170, 50));
         jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, 30));
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, 30));
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 450, 40, 50));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 160, 600));
-
         ya.setBackground(new java.awt.Color(255, 255, 255));
-        ya.setFont(new java.awt.Font("Cambria Math", 0, 18)); // NOI18N
+        ya.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
         ya.setForeground(new java.awt.Color(255, 255, 255));
-        ya.setText("Supplies");
+        ya.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ya.setText("SUPPLIES");
         ya.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, null, new java.awt.Color(0, 0, 0), new java.awt.Color(51, 51, 51)));
         ya.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 yaMouseClicked(evt);
             }
         });
-        jPanel1.add(ya, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 190, 330, 110));
+        jPanel2.add(ya, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 170, 50));
 
         ya1.setBackground(new java.awt.Color(255, 255, 255));
-        ya1.setFont(new java.awt.Font("Cambria Math", 0, 18)); // NOI18N
+        ya1.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
         ya1.setForeground(new java.awt.Color(255, 255, 255));
-        ya1.setText("Request a supply");
+        ya1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ya1.setText("REQUEST A SUPPLY");
         ya1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, null, new java.awt.Color(0, 0, 0), new java.awt.Color(51, 51, 51)));
         ya1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ya1MouseClicked(evt);
             }
         });
-        jPanel1.add(ya1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 360, 330, 110));
-
-        ya2.setBackground(new java.awt.Color(255, 255, 255));
-        ya2.setFont(new java.awt.Font("Cambria Math", 0, 18)); // NOI18N
-        ya2.setForeground(new java.awt.Color(255, 255, 255));
-        ya2.setText("Check out Supplies");
-        ya2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, null, new java.awt.Color(0, 0, 0), new java.awt.Color(51, 51, 51)));
-        ya2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ya2MouseClicked(evt);
-            }
-        });
-        jPanel1.add(ya2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 360, 330, 110));
+        jPanel2.add(ya1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 170, 50));
 
         ya3.setBackground(new java.awt.Color(255, 255, 255));
-        ya3.setFont(new java.awt.Font("Cambria Math", 0, 18)); // NOI18N
+        ya3.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
         ya3.setForeground(new java.awt.Color(255, 255, 255));
-        ya3.setText("Your Transactions");
+        ya3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ya3.setText("YOUR TRANSACTIONS");
         ya3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, null, new java.awt.Color(0, 0, 0), new java.awt.Color(51, 51, 51)));
         ya3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ya3MouseClicked(evt);
             }
         });
-        jPanel1.add(ya3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 500, 330, 110));
+        jPanel2.add(ya3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 170, 50));
+
+        ya2.setBackground(new java.awt.Color(255, 255, 255));
+        ya2.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        ya2.setForeground(new java.awt.Color(255, 255, 255));
+        ya2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ya2.setText("CHECK OUT SUPPLIES");
+        ya2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, null, new java.awt.Color(0, 0, 0), new java.awt.Color(51, 51, 51)));
+        ya2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ya2MouseClicked(evt);
+            }
+        });
+        jPanel2.add(ya2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 170, 50));
+
+        acc.setBackground(new java.awt.Color(255, 255, 255));
+        acc.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        acc.setForeground(new java.awt.Color(255, 255, 255));
+        acc.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        acc.setText("ACCOUNT");
+        acc.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, null, new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0)));
+        acc.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                accMouseClicked(evt);
+            }
+        });
+        jPanel2.add(acc, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 170, 50));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 200, 600));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -167,10 +166,6 @@ public class UserDashboard extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
 
     private void lgMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lgMouseClicked
         int confirm = JOptionPane.showConfirmDialog(this, "Are you sure you want to logout?", "Confirm Logout", JOptionPane.YES_NO_OPTION);
@@ -257,7 +252,6 @@ public class UserDashboard extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel acc;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;

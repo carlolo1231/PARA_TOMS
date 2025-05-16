@@ -192,21 +192,13 @@ public static int getHeightFromWidth(String imagePath, int desiredWidth) {
         delete = new javax.swing.JButton();
         back = new javax.swing.JButton();
         contact = new javax.swing.JTextField();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
         email = new javax.swing.JTextField();
         utype = new javax.swing.JComboBox<>();
-        jLabel32 = new javax.swing.JLabel();
         lname = new javax.swing.JTextField();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
         fname = new javax.swing.JTextField();
         id = new javax.swing.JTextField();
-        jLabel38 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
         uname = new javax.swing.JTextField();
         pname = new javax.swing.JPasswordField();
-        jLabel35 = new javax.swing.JLabel();
         ustatus = new javax.swing.JComboBox<>();
         jLabel37 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -214,21 +206,29 @@ public static int getHeightFromWidth(String imagePath, int desiredWidth) {
         image = new javax.swing.JLabel();
         select = new javax.swing.JButton();
         remove = new javax.swing.JButton();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel9.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel9.setBackground(new java.awt.Color(0, 102, 102));
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel10.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel10.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(0, 51, 102)));
+        jPanel10.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel16.setFont(new java.awt.Font("Cambria Math", 1, 24)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel16.setText("'SUPPLY TRACKER'");
+        jLabel16.setText("SUPPLY TRACKER");
         jPanel10.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 10, 670, 40));
 
         jLabel28.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
@@ -250,8 +250,8 @@ public static int getHeightFromWidth(String imagePath, int desiredWidth) {
 
         jPanel9.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 50));
 
-        jPanel11.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel11.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel11.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         a_add.setBackground(new java.awt.Color(0, 0, 204));
@@ -262,7 +262,7 @@ public static int getHeightFromWidth(String imagePath, int desiredWidth) {
                 a_addActionPerformed(evt);
             }
         });
-        jPanel11.add(a_add, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 80, -1));
+        jPanel11.add(a_add, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 120, 40));
 
         refresh.setBackground(new java.awt.Color(0, 0, 204));
         refresh.setFont(new java.awt.Font("Cambria Math", 0, 14)); // NOI18N
@@ -272,7 +272,7 @@ public static int getHeightFromWidth(String imagePath, int desiredWidth) {
                 refreshActionPerformed(evt);
             }
         });
-        jPanel11.add(refresh, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, 100, -1));
+        jPanel11.add(refresh, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 120, 40));
 
         clear.setBackground(new java.awt.Color(0, 0, 204));
         clear.setFont(new java.awt.Font("Georgia", 0, 11)); // NOI18N
@@ -282,7 +282,7 @@ public static int getHeightFromWidth(String imagePath, int desiredWidth) {
                 clearActionPerformed(evt);
             }
         });
-        jPanel11.add(clear, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 80, -1));
+        jPanel11.add(clear, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 120, 40));
 
         update.setBackground(new java.awt.Color(0, 0, 204));
         update.setFont(new java.awt.Font("Georgia", 0, 11)); // NOI18N
@@ -298,7 +298,7 @@ public static int getHeightFromWidth(String imagePath, int desiredWidth) {
                 updateActionPerformed(evt);
             }
         });
-        jPanel11.add(update, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
+        jPanel11.add(update, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 120, 40));
 
         delete.setBackground(new java.awt.Color(0, 0, 204));
         delete.setFont(new java.awt.Font("Georgia", 0, 11)); // NOI18N
@@ -308,7 +308,7 @@ public static int getHeightFromWidth(String imagePath, int desiredWidth) {
                 deleteActionPerformed(evt);
             }
         });
-        jPanel11.add(delete, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 80, -1));
+        jPanel11.add(delete, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 120, 40));
 
         back.setBackground(new java.awt.Color(0, 0, 204));
         back.setFont(new java.awt.Font("Georgia", 0, 11)); // NOI18N
@@ -318,21 +318,11 @@ public static int getHeightFromWidth(String imagePath, int desiredWidth) {
                 backActionPerformed(evt);
             }
         });
-        jPanel11.add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 80, -1));
+        jPanel11.add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 120, 40));
 
-        jPanel9.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 120, 470));
-        jPanel9.add(contact, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, 260, 40));
-
-        jLabel23.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
-        jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel23.setText("Contact #:");
-        jPanel9.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 320, 90, -1));
-
-        jLabel24.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
-        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel24.setText("Email:");
-        jPanel9.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, 90, -1));
-        jPanel9.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 260, 260, 40));
+        jPanel9.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 160, 490));
+        jPanel9.add(contact, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 260, 40));
+        jPanel9.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 260, 260, 40));
 
         utype.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
         utype.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Admin", "Staff" }));
@@ -341,24 +331,9 @@ public static int getHeightFromWidth(String imagePath, int desiredWidth) {
                 utypeActionPerformed(evt);
             }
         });
-        jPanel9.add(utype, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, 260, 50));
-
-        jLabel32.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
-        jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel32.setText("User Type:");
-        jPanel9.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 90, -1));
-        jPanel9.add(lname, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 150, 260, 40));
-
-        jLabel30.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
-        jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel30.setText("Last Name:");
-        jPanel9.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, 90, -1));
-
-        jLabel33.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
-        jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel33.setText("First Name:");
-        jPanel9.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 110, 90, -1));
-        jPanel9.add(fname, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 260, 40));
+        jPanel9.add(utype, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 210, 260, 40));
+        jPanel9.add(lname, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 160, 260, 40));
+        jPanel9.add(fname, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, 260, 40));
 
         id.setEnabled(false);
         id.addActionListener(new java.awt.event.ActionListener() {
@@ -366,30 +341,15 @@ public static int getHeightFromWidth(String imagePath, int desiredWidth) {
                 idActionPerformed(evt);
             }
         });
-        jPanel9.add(id, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 60, 170, 30));
-
-        jLabel38.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
-        jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel38.setText("ID");
-        jPanel9.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, 90, -1));
-
-        jLabel34.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
-        jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel34.setText("Username:");
-        jPanel9.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 370, 90, -1));
-        jPanel9.add(uname, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, 260, 40));
+        jPanel9.add(id, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 60, 260, 40));
+        jPanel9.add(uname, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 360, 260, 40));
 
         pname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pnameActionPerformed(evt);
             }
         });
-        jPanel9.add(pname, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 410, 260, 40));
-
-        jLabel35.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
-        jLabel35.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel35.setText("Password:");
-        jPanel9.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, 90, -1));
+        jPanel9.add(pname, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 410, 260, 40));
 
         ustatus.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
         ustatus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Active", "Pending" }));
@@ -398,20 +358,20 @@ public static int getHeightFromWidth(String imagePath, int desiredWidth) {
                 ustatusActionPerformed(evt);
             }
         });
-        jPanel9.add(ustatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 462, 260, 40));
+        jPanel9.add(ustatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 460, 260, 40));
 
-        jLabel37.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        jLabel37.setFont(new java.awt.Font("Georgia", 0, 18)); // NOI18N
         jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel37.setText("User Status");
-        jPanel9.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 470, 90, -1));
+        jLabel37.setText("ID:");
+        jPanel9.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 130, -1));
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("jLabel1");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 90, 80, 50));
-        jPanel1.add(image, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, 330));
+        jPanel1.add(image, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, 310));
 
-        jPanel9.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 100, 340, 330));
+        jPanel9.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 60, 340, 330));
 
         select.setFont(new java.awt.Font("Cambria Math", 0, 14)); // NOI18N
         select.setText("Select");
@@ -420,7 +380,7 @@ public static int getHeightFromWidth(String imagePath, int desiredWidth) {
                 selectActionPerformed(evt);
             }
         });
-        jPanel9.add(select, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 460, 120, 40));
+        jPanel9.add(select, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 420, 120, 40));
 
         remove.setFont(new java.awt.Font("Cambria Math", 0, 14)); // NOI18N
         remove.setText("Remove");
@@ -429,11 +389,51 @@ public static int getHeightFromWidth(String imagePath, int desiredWidth) {
                 removeActionPerformed(evt);
             }
         });
-        jPanel9.add(remove, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 460, 130, 40));
+        jPanel9.add(remove, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 420, 130, 40));
 
-        getContentPane().add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, -1, -1, 540));
+        jLabel39.setFont(new java.awt.Font("Georgia", 0, 18)); // NOI18N
+        jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel39.setText("User Status:");
+        jPanel9.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 470, 130, -1));
 
-        setSize(new java.awt.Dimension(1019, 566));
+        jLabel40.setFont(new java.awt.Font("Georgia", 0, 18)); // NOI18N
+        jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel40.setText("Password:");
+        jPanel9.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 420, 130, -1));
+
+        jLabel41.setFont(new java.awt.Font("Georgia", 0, 18)); // NOI18N
+        jLabel41.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel41.setText("Username:");
+        jPanel9.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 370, 130, -1));
+
+        jLabel42.setFont(new java.awt.Font("Georgia", 0, 18)); // NOI18N
+        jLabel42.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel42.setText("Contact #:");
+        jPanel9.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 320, 130, -1));
+
+        jLabel43.setFont(new java.awt.Font("Georgia", 0, 18)); // NOI18N
+        jLabel43.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel43.setText("Email:");
+        jPanel9.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 270, 130, -1));
+
+        jLabel44.setFont(new java.awt.Font("Georgia", 0, 18)); // NOI18N
+        jLabel44.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel44.setText("User Type:");
+        jPanel9.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, 130, -1));
+
+        jLabel45.setFont(new java.awt.Font("Georgia", 0, 18)); // NOI18N
+        jLabel45.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel45.setText("Last Name:");
+        jPanel9.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, 130, -1));
+
+        jLabel46.setFont(new java.awt.Font("Georgia", 0, 18)); // NOI18N
+        jLabel46.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel46.setText("First Name:");
+        jPanel9.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 130, -1));
+
+        getContentPane().add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, -1, -1, -1));
+
+        setSize(new java.awt.Dimension(1019, 565));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -743,16 +743,16 @@ public static int getHeightFromWidth(String imagePath, int desiredWidth) {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;

@@ -30,13 +30,13 @@ public class AdminDashboard extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         lname = new javax.swing.JLabel();
         fname = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
-        jButton5 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        RequestedSupplies = new javax.swing.JButton();
-        Transaction1 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
+        jButton5 = new javax.swing.JButton();
+        RequestedSupplies = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        Transaction1 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -49,37 +49,31 @@ public class AdminDashboard extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lname.setBackground(new java.awt.Color(0, 204, 204));
         lname.setFont(new java.awt.Font("Georgia", 1, 14)); // NOI18N
         lname.setForeground(new java.awt.Color(255, 255, 255));
         lname.setText("Lname");
-        jPanel2.add(lname, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 110, 32));
+        jPanel2.add(lname, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 30, 110, 32));
 
         fname.setBackground(new java.awt.Color(204, 0, 51));
         fname.setFont(new java.awt.Font("Georgia", 1, 14)); // NOI18N
         fname.setForeground(new java.awt.Color(255, 255, 255));
         fname.setText("Fname");
-        jPanel2.add(fname, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 100, 32));
-
-        jButton6.setBackground(new java.awt.Color(255, 255, 255));
-        jButton6.setFont(new java.awt.Font("Cambria Math", 1, 14)); // NOI18N
-        jButton6.setText("LOGOUT");
-        jButton6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 10, 140, 40));
+        jPanel2.add(fname, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 30, 100, 32));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 60));
 
-        jPanel3.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, 780, 470));
+
+        jPanel4.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton5.setBackground(new java.awt.Color(255, 255, 255));
         jButton5.setFont(new java.awt.Font("Cambria Math", 1, 14)); // NOI18N
@@ -90,18 +84,7 @@ public class AdminDashboard extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 30, 200, 80));
-
-        jButton7.setBackground(new java.awt.Color(255, 255, 255));
-        jButton7.setFont(new java.awt.Font("Cambria Math", 1, 14)); // NOI18N
-        jButton7.setText("Supplies");
-        jButton7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, 200, 80));
+        jPanel4.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 150, 40));
 
         RequestedSupplies.setBackground(new java.awt.Color(255, 255, 255));
         RequestedSupplies.setFont(new java.awt.Font("Cambria Math", 1, 14)); // NOI18N
@@ -112,7 +95,18 @@ public class AdminDashboard extends javax.swing.JFrame {
                 RequestedSuppliesActionPerformed(evt);
             }
         });
-        jPanel3.add(RequestedSupplies, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 200, 80));
+        jPanel4.add(RequestedSupplies, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 150, 40));
+
+        jButton7.setBackground(new java.awt.Color(255, 255, 255));
+        jButton7.setFont(new java.awt.Font("Cambria Math", 1, 14)); // NOI18N
+        jButton7.setText("Supplies");
+        jButton7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 150, 40));
 
         Transaction1.setBackground(new java.awt.Color(255, 255, 255));
         Transaction1.setFont(new java.awt.Font("Cambria Math", 1, 14)); // NOI18N
@@ -123,13 +117,20 @@ public class AdminDashboard extends javax.swing.JFrame {
                 Transaction1ActionPerformed(evt);
             }
         });
-        jPanel3.add(Transaction1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 180, 200, 80));
+        jPanel4.add(Transaction1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 150, 40));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 80, 770, 430));
+        jButton6.setBackground(new java.awt.Color(255, 255, 255));
+        jButton6.setFont(new java.awt.Font("Cambria Math", 1, 14)); // NOI18N
+        jButton6.setText("LOGOUT");
+        jButton6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 150, 40));
 
-        jPanel4.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 100, 470));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 170, 480));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

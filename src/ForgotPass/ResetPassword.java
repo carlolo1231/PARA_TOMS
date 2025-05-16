@@ -84,15 +84,17 @@ public static String hashPassword(String password) {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
 
-        BackButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        BackButton.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
         BackButton.setForeground(new java.awt.Color(255, 255, 255));
         BackButton.setText("Back");
         BackButton.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -106,9 +108,9 @@ public static String hashPassword(String password) {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(BackButton, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 177, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(BackButton, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(118, 118, 118))
         );
@@ -118,8 +120,8 @@ public static String hashPassword(String password) {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(BackButton)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(BackButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(29, 29, 29))))
@@ -127,40 +129,48 @@ public static String hashPassword(String password) {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 50));
 
+        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel3.setForeground(new java.awt.Color(102, 102, 255));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         jLabel3.setText("Confirm Password:");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 420, -1));
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 240, 420, -1));
 
-        verify.setBackground(new java.awt.Color(0, 51, 255));
-        verify.setFont(new java.awt.Font("Cambria Math", 1, 14)); // NOI18N
-        verify.setText("Change");
+        verify.setBackground(new java.awt.Color(255, 255, 255));
+        verify.setFont(new java.awt.Font("Georgia", 1, 14)); // NOI18N
+        verify.setText("CHANGE");
+        verify.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         verify.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 verifyActionPerformed(evt);
             }
         });
-        jPanel3.add(verify, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 130, 30));
+        jPanel3.add(verify, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 330, 130, 30));
 
         jLabel4.setFont(new java.awt.Font("Georgia", 1, 36)); // NOI18N
         jLabel4.setText("Change your password!");
         jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 440, -1));
 
-        jLabel5.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         jLabel5.setText("Old Password:");
-        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 420, -1));
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, 150, 30));
 
-        jLabel6.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         jLabel6.setText("New Password:");
-        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 420, -1));
-        jPanel3.add(confirmpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 230, 30));
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 420, -1));
+
+        confirmpassword.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel3.add(confirmpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 270, 290, 40));
 
         oldpassword.setEditable(false);
         oldpassword.setText("asdasdsadadda");
-        jPanel3.add(oldpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 190, 30));
-        jPanel3.add(newpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 230, 30));
+        oldpassword.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel3.add(oldpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, 290, 40));
+
+        newpassword.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel3.add(newpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, 290, 40));
 
         acc_id.setFont(new java.awt.Font("Georgia", 1, 36)); // NOI18N
         acc_id.setText("id");

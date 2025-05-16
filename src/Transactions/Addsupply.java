@@ -41,25 +41,26 @@ public class Addsupply extends javax.swing.JFrame {
         txtDescription = new javax.swing.JTextField();
         txtQuantity = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         datePurchase = new com.toedter.calendar.JDateChooser();
         txtSupplier = new javax.swing.JTextField();
         cmbStatus = new javax.swing.JComboBox<>();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         Unit = new javax.swing.JComboBox<>();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(0, 102, 0));
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -74,51 +75,76 @@ public class Addsupply extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, -1));
 
+        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel3.add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 221, 58));
-        jPanel3.add(txtDescription, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 221, 59));
-        jPanel3.add(txtQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 221, 59));
 
-        jLabel2.setText("Name:");
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 20, 40, -1));
+        txtName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel3.add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 230, 50));
 
-        jLabel3.setText("Description:");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 100, -1));
+        txtDescription.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel3.add(txtDescription, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 230, 50));
 
-        jLabel4.setText("Quantity:");
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 60, -1));
+        txtQuantity.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel3.add(txtQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 230, 50));
+
+        jLabel2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        jLabel2.setText("Quantity:");
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 180, 30));
+
+        jLabel8.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        jLabel8.setText("Name:");
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 80, 30));
+
+        jLabel11.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        jLabel11.setText("Description:");
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 180, 30));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 300, 380));
 
+        jPanel4.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel4.add(datePurchase, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 220, -1));
-        jPanel4.add(txtSupplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 221, 59));
+
+        datePurchase.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel4.add(datePurchase, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 240, 60));
+
+        txtSupplier.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel4.add(txtSupplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 280, 240, 59));
 
         cmbStatus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Available", "Low Stock", "Out Of Stock" }));
-        jPanel4.add(cmbStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 50, 260, 60));
+        cmbStatus.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel4.add(cmbStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 50, 240, 60));
 
-        jLabel1.setText("Date Purchase:");
-        jPanel4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 90, -1));
-
-        jLabel5.setText("Unit:");
-        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 40, -1));
-
-        jLabel6.setText("Supplier:");
-        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 50, -1));
-
-        jLabel7.setText("Status:");
-        jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 30, 40, -1));
-
+        jButton1.setFont(new java.awt.Font("Georgia", 1, 14)); // NOI18N
         jButton1.setText("ADD");
+        jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 250, 200, 50));
+        jPanel4.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 290, 150, 40));
 
         Unit.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pcs", "Boxes", "Liters", "Gallons", "Grams", " Lbs", "Kilos", "meter", "Ft.", "Dozen", "Inch", "Yard", "Millimeter", "Centimeter", "Pair", "Set", "Pack", "Bundle\t", "Carton", "Tray", "Roll", "Sack", "Can", "Bottle", "Jar", " ", " ", " ", " " }));
+        Unit.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel4.add(Unit, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 240, 60));
+
+        jLabel9.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        jLabel9.setText("Unit:");
+        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 180, 30));
+
+        jLabel10.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        jLabel10.setText("Supplier:");
+        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 180, 30));
+
+        jLabel12.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        jLabel12.setText("Status:");
+        jPanel4.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 20, 180, 30));
+
+        jLabel13.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        jLabel13.setText("Date Purchase:");
+        jPanel4.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 180, 30));
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, 630, 380));
 
@@ -222,13 +248,13 @@ public class Addsupply extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cmbStatus;
     private com.toedter.calendar.JDateChooser datePurchase;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
