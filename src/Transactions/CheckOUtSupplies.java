@@ -29,7 +29,9 @@ private Connection con;
          setUndecorated(true);
         initComponents();
         loadUserRequestedSuppliesToTable();
+        
     }
+    
 private void loadUserRequestedSuppliesToTable() {
     int userId = Session.getInstance().getuid(); // Get current user ID
 
@@ -45,7 +47,7 @@ private void loadUserRequestedSuppliesToTable() {
         pst.setInt(1, userId);
         ResultSet rs = pst.executeQuery();
 
-        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        DefaultTableModel model = (DefaultTableModel) table.getModel();
         model.setRowCount(0); // Clear existing data
 
         while (rs.next()) {
@@ -80,7 +82,7 @@ private void loadUserRequestedSuppliesToTable() {
         jLabel1 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        table = new javax.swing.JTable();
         Checkout = new javax.swing.JButton();
         txtRequestId = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
@@ -107,8 +109,8 @@ private void loadUserRequestedSuppliesToTable() {
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTable1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        table.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -119,7 +121,7 @@ private void loadUserRequestedSuppliesToTable() {
                 " ID", "Name", "Quantity", "Date Requested", "Status"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(table);
 
         jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 670, 230));
 
@@ -191,7 +193,7 @@ private void loadUserRequestedSuppliesToTable() {
         Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/supplytracker_db", "root", "");
 
        
-        String checkQuery = "SELECT status FROM RequestedSuppliesUser WHERE request_id = ? AND user_id = ?";
+        String checkQuery = "SELECT status FROM requestedsuppliesuser WHERE request_id = ? AND user_id = ?";
         PreparedStatement psCheck = con.prepareStatement(checkQuery);
         psCheck.setInt(1, requestId);
         psCheck.setInt(2, userId);
@@ -284,7 +286,7 @@ private void loadUserRequestedSuppliesToTable() {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable table;
     private javax.swing.JTextField txtRequestId;
     // End of variables declaration//GEN-END:variables
 }

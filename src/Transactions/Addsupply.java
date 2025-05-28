@@ -5,6 +5,7 @@
  */
 package Transactions;
 
+import ababangui.Supplies;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -53,6 +54,7 @@ public class Addsupply extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -125,7 +127,7 @@ public class Addsupply extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 290, 150, 40));
+        jPanel4.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 270, 150, 40));
 
         Unit.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pcs", "Boxes", "Liters", "Gallons", "Grams", " Lbs", "Kilos", "meter", "Ft.", "Dozen", "Inch", "Yard", "Millimeter", "Centimeter", "Pair", "Set", "Pack", "Bundle\t", "Carton", "Tray", "Roll", "Sack", "Can", "Bottle", "Jar", " ", " ", " ", " " }));
         Unit.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -146,6 +148,15 @@ public class Addsupply extends javax.swing.JFrame {
         jLabel13.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         jLabel13.setText("Date Purchase:");
         jPanel4.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 180, 30));
+
+        jButton2.setFont(new java.awt.Font("Arial Black", 0, 16)); // NOI18N
+        jButton2.setText("BACK");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 330, 150, 40));
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, 630, 380));
 
@@ -210,6 +221,12 @@ public class Addsupply extends javax.swing.JFrame {
     }
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+       Supplies sp = new Supplies();
+       sp.setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -250,6 +267,7 @@ public class Addsupply extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cmbStatus;
     private com.toedter.calendar.JDateChooser datePurchase;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
